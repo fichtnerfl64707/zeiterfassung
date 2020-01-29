@@ -1,5 +1,5 @@
 
-from . import eintrag
+from eintrag import eintrag
 
 def main(): 
 	while True: 
@@ -36,7 +36,7 @@ def tabelle_ansehen():
 	else: 
 #		print("Vorhandene Übersicht anzeigen")
 		tabelle.close()
-		tabelle_anzeigen = open("Zeituebersicht.txt", "r")
+		tabelle_anzeigen = open("Zeituebersicht.txt", "r+")
 		print(tabelle_anzeigen.read())
 
 	
