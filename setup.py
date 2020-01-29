@@ -16,7 +16,8 @@ setuptools.setup(
 	long_description=long_description,
 	long_description_content_type="text/markdown",
 	url="https://github.com/fichtnerfl64707/zeiterfassung",
-	packages=setuptools.find_packages(),
+	packages=['zeiterfassung'],
+#	packages=setuptools.find_packages(),
 	include_package_data=True,
 	scripts=['bin/zeiterfassung'],
 
