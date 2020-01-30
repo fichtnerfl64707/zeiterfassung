@@ -26,7 +26,7 @@ def main():
 
 def tabelle_ansehen():
 
-	tabelle = open("Zeituebersicht.txt", "r+")
+	tabelle = open("zeituebersicht.txt", "r+")
 	print("Zeitübersicht geöffnet")
 	if tabelle.read() == "" :
 
@@ -36,7 +36,7 @@ def tabelle_ansehen():
 	else: 
 #		print("Vorhandene Übersicht anzeigen")
 		tabelle.close()
-		tabelle_anzeigen = open("Zeituebersicht.txt", "r+")
+		tabelle_anzeigen = open("zeituebersicht.txt", "r+")
 		print(tabelle_anzeigen.read())
 
 	
@@ -45,7 +45,7 @@ def tabelle_erstellen(status, Tabelle_AT):
 
 	if status == False:
 		print("Tabelle wird erstellt")
-		tabelle_erstellen = open("Zeituebersicht.txt", "r+")
+		tabelle_erstellen = open("zeituebersicht.txt", "r+")
 		for spalte in Tabelle:
 			tabelle_erstellen.write(spalte + " | ")
 		
@@ -53,7 +53,7 @@ def tabelle_erstellen(status, Tabelle_AT):
 		tabelle_erstellen.close()
 		tabelle_ansehen()
 	else: 
-		tabelle_ergaenzen = open("Zeituebersicht.txt", "a")
+		tabelle_ergaenzen = open("zeituebersicht.txt", "a")
 		for value in Tabelle_AT:
 			tabelle_ergaenzen.write(str(value))
 			tabelle_ergaenzen.write(" | ")
@@ -76,7 +76,7 @@ def neuer_AT():
 	tabelle_erstellen(True, Tabelle_AT)
 	
 def summe(AT):
-	data = open("Zeituebersicht.txt","r")
+	data = open("zeituebersicht.txt","r")
 	array_2d = []
 	for line in data.readlines(): 
 		array_2d.append(line.split(" | "))
