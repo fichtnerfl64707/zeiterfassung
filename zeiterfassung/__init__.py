@@ -1,5 +1,5 @@
 
-from zeiterfassung import eintrag
+from . import eintrag
 
 def main(): 
 	while True: 
