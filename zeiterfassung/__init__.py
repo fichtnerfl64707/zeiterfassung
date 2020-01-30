@@ -1,5 +1,5 @@
 
-from myclass import eintrag
+from . import eintrag
 
 def main(): 
 	while True: 
