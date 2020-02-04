@@ -18,7 +18,7 @@ setuptools.setup(
 	url="https://github.com/fichtnerfl64707/zeiterfassung",
 	packages=['zeiterfassung'],
 #	package_data={'': ['zeituebersicht.txt']},
-	package_data={'zeiterfassung': ['zeituebersicht.txt']}
+	package_data={'zeiterfassung': ['zeituebersicht.txt']},
 	zip_safe=False,
 #	packages=setuptools.find_packages(),
 	include_package_data=True,
