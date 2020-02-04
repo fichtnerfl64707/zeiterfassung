@@ -1,5 +1,5 @@
 
-import eintrag
+import myclass
 
 def main(): 
 	while True: 
