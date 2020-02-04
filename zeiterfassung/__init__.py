@@ -1,5 +1,5 @@
 
-import myclass
+from zeiterfassung.myclass import eintrag
 
 def main(): 
 	while True: 
